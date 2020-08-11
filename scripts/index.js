@@ -37,6 +37,7 @@ $("#submitButton").on("click", function() {
 
   //effect1 output
   if (effect1Array.length > 0) {
+    $("#effect-heading-1").removeClass("hidden");
     for (var i = 0; i < effect1Array.length; i++) {
       if(ings12.includes(effect1Array[i]) || ings13.includes(effect1Array[i]) || ings23.includes(effect1Array[i])) {
         $("#effectOut1").append("<li class='highlighted'>" + effect1Array[i] + "</li>");
@@ -49,6 +50,7 @@ $("#submitButton").on("click", function() {
 
   //effect2 output
   if (effect2Array.length > 0) {
+    $("#effect-heading-2").removeClass("hidden");
     for (var i = 0; i < effect2Array.length; i++) {
       if(ings12.includes(effect2Array[i]) || ings13.includes(effect2Array[i]) || ings23.includes(effect2Array[i])) {
         $("#effectOut2").append("<li class='highlighted'>" + effect2Array[i] + "</li>");
@@ -61,6 +63,7 @@ $("#submitButton").on("click", function() {
 
   //effect3 output
   if (effect3Array.length > 0) {
+    $("#effect-heading-3").removeClass("hidden");
     for (var i = 0; i < effect3Array.length; i++) {
       if(ings12.includes(effect3Array[i]) || ings13.includes(effect3Array[i]) || ings23.includes(effect3Array[i])) {
         $("#effectOut3").append("<li class='highlighted'>" + effect3Array[i] + "</li>");
@@ -79,9 +82,6 @@ $("#submitButton").on("click", function() {
       if(!ingsAll.includes(ings12[i])) {
         $("#combinedOut1").append("<li>" + ings12[i] + "</li>");
       }
-      else {
-        $("#combined-heading-12").addClass("hidden");
-      }
     }
   }
 
@@ -91,9 +91,6 @@ $("#submitButton").on("click", function() {
     for (var i = 0; i < ings13.length; i++) {
       if(!ingsAll.includes(ings13[i])) {
         $("#combinedOut2").append("<li>" + ings13[i] + "</li>");
-      }
-      else {
-        $("#combined-heading-13").addClass("hidden");
       }
     }
   }
@@ -105,9 +102,6 @@ $("#submitButton").on("click", function() {
       if(!ingsAll.includes(ings23[i])) {
         $("#combinedOut3").append("<li>" + ings23[i] + "</li>");
       }
-      else {
-        $("#combined-heading-23").addClass("hidden");
-      }
     }
   }
 
@@ -117,6 +111,17 @@ $("#submitButton").on("click", function() {
     for (var i = 0; i < ingsAll.length; i++) {
       $("#combinedOutAll").append("<li>" + ingsAll[i] + "</li>");
     }
+  }
+
+  //if a combined output is empty hide it
+  if($("#combinedOut1").length < 1) {
+    $("#combined-heading-12").addClass("hidden");
+  }
+  if($("#combinedOut2").length < 1) {
+    $("#combined-heading-13").addClass("hidden");
+  }
+  if($("#combinedOut3").length < 1) {
+    $("#combined-heading-23").addClass("hidden");
   }
 
 })
