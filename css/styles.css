@@ -1,0 +1,192 @@
+/* Tag Selectors */
+
+body {
+  color: #fff;
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Cinzel", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-weight: bold;
+}
+
+p {
+  line-height: 2.3;
+}
+
+/* Scale for smaller displays */
+@media (max-width: 900px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5rem;
+  }
+  }
+
+
+/* Page Sections */
+.outer-title-section {
+  background-image: url("../images/mountainbg.jpg");
+  background-size: cover;
+  border-bottom: 2px solid white;
+}
+
+.inner-title-section {
+  background-color: #000;
+  border: 2px solid white;
+  padding: 50px;
+  width: 40%;
+}
+
+.black-section {
+  background-color: #000;
+  border: 2px solid white;
+  padding: 20px 0;
+}
+
+.main-section {
+  background-image: url("../images/fog.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 30px 50px;
+}
+
+.output-section {
+  background-image: url("../images/mountainbg2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 40px 30px;
+}
+
+.subsection {
+  margin: 100px 0;
+}
+
+.inner-output-section {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+.footer-section {
+  background-color: #000;
+  border: 2px solid white;
+  text-align: center;
+  padding: 25px;
+  color: #fff;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 15px 0 15px;
+}
+
+.footer-link:hover {
+  color: gray;
+}
+
+/* effect selection  */
+
+.btn {
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.submit-reset-button {
+  display: inline-block;
+  margin: 10px 40px;
+}
+
+#effect-selection {
+  margin: 70px 0;
+}
+
+.effect-row {
+  margin: 30px 0;
+}
+
+.chosen-effect-heading {
+  margin: 50px 0;
+}
+
+.effect-heading {
+  margin: 70px 0 20px 0;
+}
+
+.highlighted {
+  color: #fcff40;
+  font-weight: bold;
+}
+
+.incompatible {
+  border: 2px solid red !important;
+}
+
+.hidden {
+  display: none;
+}
+
+#effectOut1, #effectOut2, #effectOut3, #combinedOut1, #combinedOut2, #combinedOut3, #combinedOutAll {
+  list-style: none;
+  padding: 0;
+}
+
+/* Custom Bootstrap-related CSS */
+/* Custom Buttons */
+.btn-orange {
+  color: #fff;
+  background-color: #f89f1a;
+  border-color: #c47706;
+}
+.btn-orange:focus,
+.btn-orange.focus {
+  color: #fff;
+  background-color: #dc8607;
+  border-color: #3a2302;
+}
+.btn-orange:hover {
+  color: #fff;
+  background-color: #dc8607;
+  border-color: #c47706;
+}
+.btn-orange:active,
+.btn-orange.active,
+.open > .dropdown-toggle.btn-orange {
+  color: #fff;
+  background-color: #dc8607;
+  border-color: #c47706;
+}
+.btn-orange:active:hover,
+.btn-orange.active:hover,
+.open > .dropdown-toggle.btn-orange:hover,
+.btn-orange:active:focus,
+.btn-orange.active:focus,
+.open > .dropdown-toggle.btn-orange:focus,
+.btn-orange:active.focus,
+.btn-orange.active.focus,
+.open > .dropdown-toggle.btn-orange.focus {
+  color: #fff;
+  background-color: #c47706;
+  border-color: #3a2302;
+}
+.btn-orange:active,
+.btn-orange.active,
+.open > .dropdown-toggle.btn-orange {
+  background-image: none;
+}
+
+.btn-orange .badge {
+  color: #f89f1a;
+  background-color: #fff;
+}

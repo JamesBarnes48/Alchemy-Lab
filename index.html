@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Skyrim Alchemy Lab</title>
+  <!-- favicon here -->
+
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS & Bootstrap Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/62fb0560de.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid outer-title-section">
+    <div class="container-fluid inner-title-section">
+      <h2>The Elder Scrolls V: Skyrim</h2>
+      <h1>Alchemy Lab</h1>
+    </div>
+  </div>
+
+  <div class="container-fluid main-section">
+    <h2>Welcome to the Lab!</h2>
+    <p>Use a combination of the buttons below to create the potion you desire.</p>
+      <p>When you're finished select 'Create Potion' and you will see all ingredients for each effect, as well as common ingredients between your chosen effects</p>
+      <p>If an effect has no common ingredients with the effects already selected it will be highlighted with a red border.</p>
+      <p>Try experimenting and see what you find!</p>
+
+    <!-- Effect Selection -->
+    <section id="effect-selection">
+      <h1 class="effect-heading">Potions</h1>
+      <div class="black-section">
+        <div class="row effect-row">
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#restore" aria-expanded="false" aria-controls="restore">Restore</button>
+            <div class="collapse" id="restore">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Restore Health</button>
+                <button type="button" class="btn btn-primary effect-button">Restore Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Restore Stamina</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#fortify" aria-expanded="false" aria-controls="fortify">Fortify</button>
+            <div class="collapse" id="fortify">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Fortify Health</button>
+                <button type="button" class="btn btn-primary effect-button">Fortify Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Fortify Stamina</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#misc" aria-expanded="false" aria-controls="misc">Misc.</button>
+            <div class="collapse" id="misc">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-light effect-button">Invisibility</button>
+                <button type="button" class="btn btn-light effect-button">Cure Disease</button>
+                <button type="button" class="btn btn-light effect-button">Waterbreathing</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row effect-row">
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#resist" aria-expanded="false" aria-controls="resist">Resist</button>
+            <div class="collapse" id="resist">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-light effect-button">Resist Fire</button>
+                <button type="button" class="btn btn-light effect-button">Resist Frost</button>
+                <button type="button" class="btn btn-light effect-button">Resist Magic</button>
+                <button type="button" class="btn btn-light effect-button">Resist Poison</button>
+                <button type="button" class="btn btn-light effect-button">Resist Shock</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#fortifystats" aria-expanded="false" aria-controls="fortifystats">Fortify Stats</button>
+            <div class="collapse" id="fortifystats">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fortify Alteration</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Barter</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Block</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Carry Weight</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fortify Destruction</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Enchanting</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Heavy Armor</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Illusion</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fortify Lockpicking</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Marksman</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify One-Handed</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Pickpocket</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fortify Smithing</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Sneak</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Two-Handed</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Conjuration</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fortify Light Armor</button>
+                <button type="button" class="btn btn-orange effect-button">Fortify Restoration</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#regen" aria-expanded="false" aria-controls="regen">Regenerate</button>
+            <div class="collapse" id="regen">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Regenerate Health</button>
+                <button type="button" class="btn btn-primary effect-button">Regenerate Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Regenerate Stamina</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="effect-heading">Poisons</h1>
+      <div class="black-section">
+        <div class="row effect-row">
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#damage" aria-expanded="false" aria-controls="damage">Damage</button>
+            <div class="collapse" id="damage">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Damage Health</button>
+                <button type="button" class="btn btn-primary effect-button">Damage Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Damage Stamina</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary effect-button">Damage Magicka Regen</button>
+                <button type="button" class="btn btn-success effect-button">Damage Stamina Regen</button>
+              </div>
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Lingering Damage Health</button>
+                <button type="button" class="btn btn-primary effect-button">Lingering Damage Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Lingering Damage Stamina</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#ravage" aria-expanded="false" aria-controls="ravage">Ravage</button>
+            <div class="collapse" id="ravage">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-danger effect-button">Ravage Health</button>
+                <button type="button" class="btn btn-primary effect-button">Ravage Magicka</button>
+                <button type="button" class="btn btn-success effect-button">Ravage Stamina</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#statusEffects" aria-expanded="false" aria-controls="status effects">Status Effects</button>
+            <div class="collapse" id="statusEffects">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-orange effect-button">Fear</button>
+                <button type="button" class="btn btn-orange effect-button">Frenzy</button>
+                <button type="button" class="btn btn-orange effect-button">Paralysis</button>
+                <button type="button" class="btn btn-orange effect-button">Slow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row effect-row">
+          <div class="col-lg-12">
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#weakness" aria-expanded="false" aria-controls="weakness">Weakness</button>
+            <div class="collapse" id="weakness">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-light effect-button">Weakness to Fire</button>
+                <button type="button" class="btn btn-light effect-button">Weakness to Frost</button>
+                <button type="button" class="btn btn-light effect-button">Weakness to Magic</button>
+                <button type="button" class="btn btn-light effect-button">Weakness to Poison</button>
+                <button type="button" class="btn btn-light effect-button">Weakness to Shock</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Chosen Effects Display -->
+    <div class="row">
+      <div class="col-lg-4">
+        <h2 class="chosen-effect-heading">Chosen Effect 1</h2>
+        <button id="chosenEffect1" type="button" class="btn btn-light invisible chosen-effect-btn"></button>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="chosen-effect-heading">Chosen Effect 2</h2>
+        <button id="chosenEffect2" type="button" class="btn btn-light invisible chosen-effect-btn"></button>
+      </div>
+      <div class="col-lg-4">
+        <h2 class="chosen-effect-heading">Chosen Effect 3</h2>
+        <button id="chosenEffect3" type="button" class="btn btn-light invisible chosen-effect-btn"></button>
+      </div>
+    </div>
+    <button type="button" id="submitButton" class="btn btn-dark submit-reset-button">Create Potion</button>
+    <button type="button" id="resetButton" class="btn btn-dark submit-reset-button">Reset Effects</button>
+  </div>
+
+  <!-- Output -->
+  <div class="output-section">
+    <div class="black-section inner-output-section">
+      <div class="subsection">
+        <h1 class="chosen-effect-heading">Effect Ingredients</h1>
+        <div class="row effect-row">
+          <div class="col-lg-4 col-md-12">
+            <h2 id="effect-heading-1" class="chosen-effect-heading">Chosen Effect 1</h2>
+            <ul id="effectOut1"></ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h2 id="effect-heading-2" class="chosen-effect-heading">Chosen Effect 2</h2>
+            <ul id="effectOut2"></ul>
+          </div>
+          <div class="col-lg-4 col-md-12">
+            <h2 id="effect-heading-3" class="chosen-effect-heading">Chosen Effect 3</h2>
+            <ul id="effectOut3"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="subsection">
+        <h1 class="chosen-effect-heading">Common Ingredients</h1>
+        <h2 id="combined-heading-12" class="chosen-effect-heading hidden">Chosen Effect 1 and Chosen Effect 2</h2>
+        <ul id="combinedOut1"></ul>
+        <h2 id="combined-heading-13" class="chosen-effect-heading hidden">Chosen Effect 1 and Chosen Effect 3</h2>
+        <ul id="combinedOut2"></ul>
+        <h2 id="combined-heading-23" class="chosen-effect-heading hidden">Chosen Effect 2 and Chosen Effect 3</h2>
+        <ul id="combinedOut3"></ul>
+        <h2 id="combined-heading-all" class="chosen-effect-heading hidden">All Effects</h2>
+        <ul id="combinedOutAll"></ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+  <footer id="footer">
+    <div class="container-fluid footer-section">
+      <a class="footer-link" href="https://www.linkedin.com/in/james-barnes-6406821b1/"><i class="fab fa-linkedin"></i></a>
+      <a class="footer-link" href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+      <a class="footer-link" href="https://jamesbarnes48.github.io/PersonalSite/"><i class="fas fa-globe"></i></a>
+      <p>© 2020 James Barnes</p>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/data.js" charset="utf-8"></script>
+  <script src="scripts/index.js" charset="utf-8"></script>
+</body>
+
+</html>
