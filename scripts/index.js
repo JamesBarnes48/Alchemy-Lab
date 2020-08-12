@@ -15,6 +15,11 @@ $(".effect-button").on("click", buttonClicked);
 //submit button
 $("#submitButton").on("click", function() {
 
+  //set flags
+  var combinationFound1 = false;
+  var combinationFound2 = false;
+  var combinationFound3 = false;
+
   var btn1 = $("#chosenEffect1").text();
   var btn2 = $("#chosenEffect2").text();
   var btn3 = $("#chosenEffect3").text();
@@ -81,6 +86,7 @@ $("#submitButton").on("click", function() {
       //if a common ingredient across all 3 effects, don't display under this heading
       if(!ingsAll.includes(ings12[i])) {
         $("#combinedOut1").append("<li>" + ings12[i] + "</li>");
+        combinationFound1 = true;
       }
     }
   }
@@ -91,6 +97,7 @@ $("#submitButton").on("click", function() {
     for (var i = 0; i < ings13.length; i++) {
       if(!ingsAll.includes(ings13[i])) {
         $("#combinedOut2").append("<li>" + ings13[i] + "</li>");
+        combinationFound2 = true;
       }
     }
   }
@@ -101,6 +108,7 @@ $("#submitButton").on("click", function() {
     for (var i = 0; i < ings23.length; i++) {
       if(!ingsAll.includes(ings23[i])) {
         $("#combinedOut3").append("<li>" + ings23[i] + "</li>");
+        combinationFound3 = true;
       }
     }
   }
@@ -114,13 +122,17 @@ $("#submitButton").on("click", function() {
   }
 
   //if a combined output is empty hide it
-  if($("#combinedOut1").length < 1) {
+  console.log(("#combinedOut1").length);
+  console.log(("#combinedOut2").length);
+  console.log(("#combinedOut3").length);
+
+  if(!combinationFound1) {
     $("#combined-heading-12").addClass("hidden");
   }
-  if($("#combinedOut2").length < 1) {
+  if(!combinationFound2) {
     $("#combined-heading-13").addClass("hidden");
   }
-  if($("#combinedOut3").length < 1) {
+  if(!combinationFound3) {
     $("#combined-heading-23").addClass("hidden");
   }
 
@@ -133,13 +145,18 @@ $("#resetButton").on("click", function() {
   effect2Full = false;
   effect3Full = false;
   resetButtons();
+  $("#effect-heading-1").addClass("hidden");
+  $("#effect-heading-2").addClass("hidden");
+  $("#effect-heading-3").addClass("hidden");
+  $("#combinedOutAll").html("");
+  $("#combinedOutAll").html("");
   $("#effectOut1").html("");
   $("#effectOut2").html("");
   $("#effectOut3").html("");
   $("#combinedOut1").html("");
   $("#combinedOut2").html("");
   $("#combinedOut3").html("");
-  $(".no-results-text").remove();
+  $("#combinedOutAll").html("");
   effect1Name = "Chosen Effect 1";
   effect2Name = "Chosen Effect 2";
   effect3Name = "Chosen Effect 3";
