@@ -13,19 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  line-height: 2.3;
+  line-height: 2;
 }
-
-/* Scale for smaller displays */
-@media (max-width: 900px) {
-  body {
-    font-size: 1rem;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-size: 1.5rem;
-  }
-  }
 
 
 /* Page Sections */
@@ -99,6 +88,7 @@ p {
 /* effect selection  */
 
 .btn {
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 20px 0;
 }
@@ -124,6 +114,8 @@ p {
   margin: 70px 0 20px 0;
 }
 
+/* general purpose classes */
+
 .highlighted {
   color: #fcff40;
   font-weight: bold;
@@ -141,6 +133,72 @@ p {
   list-style: none;
   padding: 0;
 }
+
+/* Scale for smaller displays */
+@media (max-width: 800px) {
+  body {
+    font-size: 2rem;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2.4rem;
+  }
+
+  p {
+    margin: 60px 0;
+  }
+
+  .inner-title-section {
+    width: 70%;
+  }
+
+  .main-section {
+      padding: 15px 40px;
+  }
+
+  .main-section:before {
+    content: "";
+    background-image: url("../images/fog.jpg");
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .inner-output-section {
+    width: 85%;
+  }
+
+  .output-section:before {
+    content: "";
+    background: url("../images/mountainbg2.jpg");
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.3rem 0.4rem;
+  }
+  }
 
 /* Custom Bootstrap-related CSS */
 /* Custom Buttons */
