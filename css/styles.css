@@ -149,7 +149,7 @@ p {
   }
 
   .inner-title-section {
-    width: 70%;
+    width: 75%;
   }
 
   .main-section {
@@ -175,10 +175,11 @@ p {
 
   .inner-output-section {
     width: 90%;
+    text-align: center !important;
   }
 
   .output-section {
-    background-color: transparent;
+    background: none !important;
   }
 
   .output-section:before {
@@ -198,10 +199,10 @@ p {
     background-size: cover;
   }
 
-  .btn {
+  /* .btn {
     font-size: 1.8rem;
     padding: 0.3rem 0.4rem;
-  }
+  } */
   }
 
 /* Custom Bootstrap-related CSS */
