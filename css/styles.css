@@ -1,5 +1,4 @@
 /* Tag Selectors */
-
 body {
   color: #fff;
   font-size: 1.3rem;
@@ -15,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   line-height: 2;
 }
-
 
 /* Page Sections */
 .outer-title-section {
@@ -64,7 +62,6 @@ p {
 }
 
 /* Footer */
-
 .footer-section {
   background-color: #000;
   border: 2px solid white;
@@ -86,7 +83,6 @@ p {
 }
 
 /* effect selection  */
-
 .btn {
   font-size: 1.2rem;
   font-weight: bold;
@@ -115,7 +111,6 @@ p {
 }
 
 /* general purpose classes */
-
 .highlighted {
   color: #fcff40;
   font-weight: bold;
@@ -136,6 +131,7 @@ p {
 
 /* Scale for smaller displays */
 @media (max-width: 800px) {
+
   /* body {
     font-size: 2.2rem;
   }
@@ -143,19 +139,17 @@ p {
   h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
   } */
-
   p {
     margin: 60px 0;
   }
 
   .inner-title-section {
-    width: 75%;
-    text-align: center !important;
-    margin: 0 auto !important;
+    width: 78%;
+    padding: 25px;
   }
 
   .main-section {
-      padding: 15px 40px;
+    padding: 15px 40px;
   }
 
   .main-section:before {
@@ -200,11 +194,11 @@ p {
     background-size: cover;
   }
 
-  .effect-btn {
+  .effect-button {
     font-size: 0.7rem;
     padding: 0.3rem 0.4rem;
   }
-  }
+}
 
 /* Custom Bootstrap-related CSS */
 /* Custom Buttons */
@@ -213,40 +207,45 @@ p {
   background-color: #f89f1a;
   border-color: #c47706;
 }
+
 .btn-orange:focus,
 .btn-orange.focus {
   color: #fff;
   background-color: #dc8607;
   border-color: #3a2302;
 }
+
 .btn-orange:hover {
   color: #fff;
   background-color: #dc8607;
   border-color: #c47706;
 }
+
 .btn-orange:active,
 .btn-orange.active,
-.open > .dropdown-toggle.btn-orange {
+.open>.dropdown-toggle.btn-orange {
   color: #fff;
   background-color: #dc8607;
   border-color: #c47706;
 }
+
 .btn-orange:active:hover,
 .btn-orange.active:hover,
-.open > .dropdown-toggle.btn-orange:hover,
+.open>.dropdown-toggle.btn-orange:hover,
 .btn-orange:active:focus,
 .btn-orange.active:focus,
-.open > .dropdown-toggle.btn-orange:focus,
+.open>.dropdown-toggle.btn-orange:focus,
 .btn-orange:active.focus,
 .btn-orange.active.focus,
-.open > .dropdown-toggle.btn-orange.focus {
+.open>.dropdown-toggle.btn-orange.focus {
   color: #fff;
   background-color: #c47706;
   border-color: #3a2302;
 }
+
 .btn-orange:active,
 .btn-orange.active,
-.open > .dropdown-toggle.btn-orange {
+.open>.dropdown-toggle.btn-orange {
   background-image: none;
 }
 
