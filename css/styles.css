@@ -137,11 +137,11 @@ p {
 /* Scale for smaller displays */
 @media (max-width: 800px) {
   body {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
 
   p {
@@ -149,7 +149,7 @@ p {
   }
 
   .inner-title-section {
-    width: 75%;
+    width: 70%;
   }
 
   .main-section {
@@ -195,7 +195,7 @@ p {
   }
 
   .btn {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     padding: 0.3rem 0.4rem;
   }
   }
