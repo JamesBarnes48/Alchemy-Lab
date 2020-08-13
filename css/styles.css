@@ -136,13 +136,13 @@ p {
 
 /* Scale for smaller displays */
 @media (max-width: 800px) {
-  body {
+  /* body {
     font-size: 2.2rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem;
-  }
+  } */
 
   p {
     margin: 60px 0;
@@ -175,6 +175,10 @@ p {
 
   .inner-output-section {
     width: 90%;
+  }
+
+  .output-section {
+    background-color: transparent;
   }
 
   .output-section:before {
