@@ -150,6 +150,8 @@ p {
 
   .inner-title-section {
     width: 75%;
+    text-align: center !important;
+    margin: 0 auto !important;
   }
 
   .main-section {
@@ -174,8 +176,7 @@ p {
   }
 
   .inner-output-section {
-    width: 90%;
-    text-align: center !important;
+    width: 93%;
   }
 
   .output-section {
@@ -199,10 +200,10 @@ p {
     background-size: cover;
   }
 
-  /* .btn {
-    font-size: 1.8rem;
+  .effect-btn {
+    font-size: 0.7rem;
     padding: 0.3rem 0.4rem;
-  } */
+  }
   }
 
 /* Custom Bootstrap-related CSS */
