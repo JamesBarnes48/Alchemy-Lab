@@ -195,8 +195,8 @@ p {
   }
 
   .effect-button {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem !important;
+    padding: 0.3rem 0.4rem !important;
   }
 }
 
