@@ -137,11 +137,11 @@ p {
 /* Scale for smaller displays */
 @media (max-width: 800px) {
   body {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 
   p {
@@ -149,7 +149,7 @@ p {
   }
 
   .inner-title-section {
-    width: 70%;
+    width: 75%;
   }
 
   .main-section {
@@ -174,7 +174,7 @@ p {
   }
 
   .inner-output-section {
-    width: 85%;
+    width: 90%;
   }
 
   .output-section:before {
@@ -195,7 +195,7 @@ p {
   }
 
   .btn {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
     padding: 0.3rem 0.4rem;
   }
   }
